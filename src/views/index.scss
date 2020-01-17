@@ -1,0 +1,205 @@
+.app {
+  width: 750px;
+  height: 1334px;
+  position: relative;
+  background:rgba(255,255,255,1);
+}
+.header {
+  width: 100%;
+  height: 128px;
+  position: relative;
+  span {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    img {
+      width: 100%;
+    }
+  }
+  .title {
+    width: 80%;
+    line-height: 128px;
+    margin-left: 10%;
+    text-align: center;
+    font-size:36px;
+    font-weight:500;
+    color:rgba(31,31,31,1);
+  }
+}
+
+.body {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  // logo
+  .logo {
+    width: 360px;
+    height: auto;
+    margin: 0 auto;
+    .img {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      color: rgba(200,175,112,1);
+      background: #222;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .FIKSlogin {
+      width:360px;
+      height:40px;
+      font-size:28px;
+      font-family:PingFangSC-Medium,PingFang SC;
+      font-weight:500;
+      color:rgba(31,31,31,1);
+      line-height:40px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .loginTips {
+      width:360px;
+      height:36px;
+      font-size:24px;
+      font-family:PingFangSC-Regular,PingFang SC;
+      font-weight:400;
+      color:rgba(140,140,140,1);
+      line-height:36px;
+      margin-top: 10px;
+    }
+  }
+
+  // 账号和验证码
+  .signin {
+    width: 100%;
+    margin: 60px auto 0;
+    position: relative;
+    .form {
+      width: 100%;
+      height: auto;
+      margin-bottom: 120px;
+      // 账号和验证码通用样式
+      .ipt {
+        width: 100%;
+        height: 120px;
+        line-height: 120px;
+        position: relative;
+        button {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        input {
+          width: 100%;
+          height: 120px;
+          line-height: 120px;
+          font-size: 32px;
+          padding-left: 0;
+          border-bottom: 1px solid #D6D6D6;
+        }
+      }
+      // 账号
+      #name {
+        button {
+          width: 44px;
+          height: 44px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      // 验证码
+      #passwordIpt {
+        button {
+          width:180px;
+          height:72px;
+          background:rgba(34,34,34,1);
+          border-radius:8px;
+          font-size:28px;
+          font-family:PingFangSC-Regular,PingFang SC;
+          font-weight:400;
+          color:rgba(200,175,112,1);
+          line-height:36px;
+        }
+        // 获取验证码，按钮处于不可点击状态
+        .disabled {
+          background:rgba(191,191,191,1);
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+
+  // 登录按钮
+  #login {
+    width:670px;
+    height:96px;
+    background:rgba(34,34,34,1);
+    border-radius:16px;
+    font-size:32px;
+    font-family:PingFang-SC-Bold,PingFang-SC;
+    font-weight:bold;
+    color:rgba(200,175,112,1);
+    line-height:40px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  // position: absolute;
+  // bottom: 114px;
+  margin-top: 40px;
+  padding: 40px;
+  .spanLines {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .lines {
+      width: 80px;
+      height: 0;
+      border: .5px solid #D6D6D6;
+    }
+    .tips {
+      min-width:392px;
+      height:40px;
+      font-size:28px;
+      font-family:PingFangSC-Medium,PingFang SC;
+      font-weight:500;
+      color:rgba(31,31,31,1);
+      line-height:40px;
+    }
+  }
+  ul {
+    width: 100%;
+    padding: 39px;
+    li {
+      width: 100%;
+      height: 40px;
+      text-align: left;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+      span {
+        width: auto;
+        height:40px;
+        font-size:28px;
+        font-family:PingFangSC-Medium,PingFang SC;
+        font-weight:500;
+        color:rgba(154,154,154,1);
+        line-height:40px;
+      }
+    }
+  }
+}
