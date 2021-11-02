@@ -1,7 +1,7 @@
 # vue-vw-mobile
 
 <div align="center">
-vue移动端自适应脚手架
+移动端适配
 </div>
 
 ## Project clone
