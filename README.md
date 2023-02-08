@@ -1,8 +1,17 @@
 # vue-vw-mobile
 
 <div align="center">
-移动端适配
+使用vw实现移动端适配脚手架
 </div>
+
+## 简介
+本项目是基于vw实现的移动端适配脚手架，按照750*1334的UI设计图为基准，在设置尺寸时直接按照UI图填写即可。如果更改设计图基准尺寸，在`.postcssrc.js`文件更改。
+
+[如何在Vue项目中使用vw实现移动端适配](./docs/guide.md)
+
+> 如果安装或启动报错，请对照`package.json`文件的依赖及版本。
+
+项目使用scss为css预处理语言，开发者可以根据自己习惯来安装别的css预处理语言。
 
 ## Project clone
 ```bash
@@ -57,6 +66,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Modern browsers and IE10.
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Opera |
-| --- | --- | --- | --- | --- |
-| IE10, Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IE10, Edge                                                                                                                                                                                                      | last 2 versions                                                                                                                                                                                                   | last 2 versions                                                                                                                                                                                               | last 2 versions                                                                                                                                                                                               | last 2 versions                                                                                                                                                                                           |
 
