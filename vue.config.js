@@ -4,12 +4,12 @@ const { GitRevisionPlugin } = require('git-revision-webpack-plugin')
 const GitRevision = new GitRevisionPlugin()
 const buildDate = JSON.stringify(new Date().toLocaleString())
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
 // check Git
-function getGitHash () {
+function getGitHash() {
   try {
     return GitRevision.version()
   } catch (e) {}
@@ -23,7 +23,7 @@ const assetsCDN = {
   externals: {
     vue: 'Vue',
     'vue-router': 'VueRouter',
-    vuex: 'Vuex'
+    vuex: 'Vuex',
   },
   css: [],
   // https://unpkg.com/browse/vue@2.6.10/
@@ -31,8 +31,8 @@ const assetsCDN = {
     '//cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js',
     '//cdn.jsdelivr.net/npm/vue-router@3.1.3/dist/vue-router.min.js',
     '//cdn.jsdelivr.net/npm/vuex@3.1.2/dist/vuex.min.js',
-    '//cdn.jsdelivr.net/npm/axios@1.3.3/dist/axios.min.js'
-  ]
+    '//cdn.jsdelivr.net/npm/axios@1.3.3/dist/axios.min.js',
+  ],
 }
 
 // vue.config.js
@@ -45,11 +45,11 @@ const vueConfig = {
       new webpack.DefinePlugin({
         APP_VERSION: `"${require('./package.json').version}"`,
         GIT_HASH: JSON.stringify(getGitHash),
-        BUILD_DATE: buildDate
-      })
+        BUILD_DATE: buildDate,
+      }),
     ],
     // if prod, add externals
-    externals: isProd ? assetsCDN.externals : {}
+    externals: isProd ? assetsCDN.externals : {},
   },
 
   chainWebpack: config => {
@@ -68,7 +68,7 @@ const vueConfig = {
       .use('file-loader')
       .loader('file-loader')
       .options({
-        name: 'assets/[name].[hash:8].[ext]'
+        name: 'assets/[name].[hash:8].[ext]',
       })
 
     // if prod is on
@@ -83,7 +83,7 @@ const vueConfig = {
 
   devServer: {
     // development server port 8000
-    port: 8000
+    port: 8000,
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
     // proxy: {
     //   '/auth': {
@@ -101,7 +101,7 @@ const vueConfig = {
   productionSourceMap: false,
   lintOnSave: undefined,
   // babel-loader no-ignore node_modules/*
-  transpileDependencies: []
+  transpileDependencies: [],
 }
 
 module.exports = vueConfig
