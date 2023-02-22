@@ -24,6 +24,7 @@ const assetsCDN = {
     vue: 'Vue',
     'vue-router': 'VueRouter',
     vuex: 'Vuex',
+    axios: 'axios',
   },
   css: [],
   // https://unpkg.com/browse/vue@2.6.10/
