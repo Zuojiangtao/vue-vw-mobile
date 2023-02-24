@@ -552,5 +552,6 @@ img {
 
 如果你下载了示你源码，先要确认你的系统环境能跑Vue的项目，然后下载下来之后，解压缩，接着运行`npm i`，再运行`npm run dev`，你就可以看到效果了。
 
-> [如何在Vue项目中使用vw实现移动端适配](https://www.jianshu.com/p/1f1b23f8348f)
-> [如何在Vue项目中使用vw实现移动端适配](https://www.w3cplus.com/mobile/vw-layout-in-vue.html)
+> [如何在Vue项目中使用vw实现移动端适配-简书](https://www.jianshu.com/p/1f1b23f8348f)
+> 
+> [如何在Vue项目中使用vw实现移动端适配-w3cplus](https://www.w3cplus.com/mobile/vw-layout-in-vue.html)
