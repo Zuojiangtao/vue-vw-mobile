@@ -1,4 +1,4 @@
-# 基于vue-cli4及vw方案实现的移动端企业级工程架构
+# 基于vue-cli5及vw方案实现的移动端企业级工程架构
 
 <div align="center">
 使用vw实现移动端适配脚手架
@@ -51,6 +51,8 @@ yarn run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+|
+查看 [配置参考](https://cli.vuejs.org/zh/config/).
 
 
 ## 其他说明
